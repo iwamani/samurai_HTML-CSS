@@ -1,0 +1,64 @@
+<!--リンク疑似クラス-->
+<!--
+<html lang="ja">
+    <head>
+        <style>
+            /*まだアクセスしたことがないリンク先のスタイルを設定*/
+            a:link {
+                color: black;
+            }
+            
+            /*既にアクセスしたことがあるリンク先のスタイルを設定*/
+            a:visited {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Index</h1>
+        <a href="hoge.html">Link</a>
+    </body>
+</html>
+-->
+
+<!--ユーザーアクション疑似クラス-->
+<!--
+<html lang="ja">
+    <head>
+        <style>
+            a:hover {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.sejuku.net/blog/">SAMURAI ENGINEERブログ</a>
+    </body>
+</html>
+-->
+
+<!--ユーザーアクション疑似クラスその他-->
+<html lang="ja">
+    <head>
+        <style>
+            /*カーソルが重なったときのスタイル*/
+            a:hover {
+                background-color: red;
+            }
+            
+            /*クリックしてる時のスタイル*/
+            a:active {
+                background-color: yellow;
+            }
+            
+            /*inputなどで入力欄を選択している時のスタイル*/
+            input:focus {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.sejuku.net/blog/">SAMURAI ENGINEERBlog</a>
+        <input type="text"/>
+    </body>
+</html>
