@@ -1,0 +1,48 @@
+<!--floatを使ったナビゲーション-->
+<!--
+<html lang="ja">
+    <head>
+        <style>
+            .sort {
+                /*左右どちらかに揃える*/
+                float: right;
+                /*floatを指定しない場合初期値はnone*/
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sort">
+            Navi1
+        </div>
+        <div class="sort">
+            Navi2
+        </div>
+        <div class="sort">
+            Navi3
+        </div>
+    </body>
+</html>
+-->
+
+<!--display:inline-blockを使うケース-->
+<html lang="ja">
+    <head>
+        <style>
+            .sort {
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sort">
+            Navi1
+        </div>
+        <div class="sort">
+            Navi2
+        </div>
+        <div class="sort">
+            Navi3
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!--レスポンシブデザイン-->
+
+<!--ブレイクポイント
+    CSSなどの設定をスマホ・ＰＣで切り分ける際の画面サイズのこと
+-->
+
+<!--
+サイズごとのブレイクポイントの振り分け
+
+480px以下 →→→ スマートフォン(縦)
+600px以下 →→→ スマートフォン(横)
+960px以下 →→→ タブレット
+1280px以下 →→→ パソコン(画面小)
+1280pxより大きい →→→ パソコン(画面大)
+
+
+メディアクエリ
+    画面サイズに合わせてCSSの適用を分岐できる機能
+-->
+
+<!--
+viewport
+    Webページを表示するデバイスを検知し、そのデバイスの画面サイズなどを取得できるもの
+    例）<meta name="viewport" content="width=device-width,initial-scale=1">
+
+-->
+
+
+
+<html lang="ja">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <style>
+            .media {
+                background-color: blue;
+            }
+            
+            @media screen and (min-width:480px) {
+                .media {
+                    background-color: red;
+                }
+            }
+            
+            @media screen and (min-width:640px) {
+                .media {
+                    background-color: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="media">
+            <h1>メディアクエリ</h1>
+        </div>
+    </body>
+</html>

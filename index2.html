@@ -1,0 +1,66 @@
+<!--構造疑似クラス-->
+<!--
+<html lang="ja">
+    <head>
+        <style>
+            /*h1タグの最初の子要素だけにスタイルを適用*/
+            h1:first-child {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hoge</h1>
+        <h1>Fuga</h1>
+        <h1>Foo</h1>
+        <h1>Bar</h1>
+    </body>
+</html>
+-->
+
+<!--構造疑似クラスその他-->
+<!--
+<html lang="ja">
+    <head>
+        <style>
+            /*htmlタグ全体の背景色を変更*/
+            :root {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hoge</h1>
+        <h1>Fuga</h1>
+        <h1>Foo</h1>
+        <h1>Bar</h1>
+    </body>
+</html>
+-->
+
+<html lang="ja">
+    <head>
+        <style>
+            /*最後のh1タグに対してのみスタイルを適用*/
+            h1:last-child {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hoge</h1>
+        <h1>Fuga</h1>
+        <h1>Foo</h1>
+        <h1>Bar</h1>
+    </body>
+</html>
+
+<!--その他代表的な構造疑似クラス-->
+<!--
+:first-of-type
+一番最初に表示されるHTML要素に対してのみスタイルを設定(間に他のHTML要素があってもOK)
+:last-of-type
+一番最後に表示されるHTML要素に対してのみスタイルを設定(間に他のHTML要素があってもOK)
+:empty
+空白のHTML要素に対してスタイルを設定（<div></div>など)
+-->

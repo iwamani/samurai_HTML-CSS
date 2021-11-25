@@ -1,0 +1,32 @@
+<!--about.htmlに移動する-->
+<!--
+<html lang="ja">
+    <body>
+        <a href="about.html">About</a>
+    </body>
+</html>
+-->
+
+<!--同じページ内のHTML要素に移動する-->
+<html lang="ja">
+    <head>
+        <style>
+            /*同じページ内のHTML要素にスクロール*/
+            html{
+                scroll-behavior: smooth;
+            }
+            
+            .size{
+                height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="size">
+            <a href="#hoge">move to hoge</a>
+        </div>
+        <div id="hoge" class="size">
+            <h1>hoge</h1>
+        </div>
+    </body>
+</html>
